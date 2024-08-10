@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 10px;
+    --bg-color-red: tomato;
+    --bg-color-green: rgb(68, 175, 68);
+    --bg-color-orange: rgb(218, 165, 65);
+}
+
+.active{
+    
+}
+
+body{
+    overflow: hidden;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container-nav{
+    z-index: 5;
+    display: flex;
+    position: absolute;
+    bottom: 10rem;
+    width: 100%;
+    justify-content: center;
+
+    nav{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+
+        .button-nav{
+            width: 5rem;
+            height: 5rem;
+            border: none;
+            border-radius: 50%;
+            line-height: 0;
+            font-size: 2rem;
+            background-color: rgba(255, 255, 255, .3);
+            color: rgba(0, 0, 0, .3);
+            font-weight: bolder;
+            cursor: pointer;
+            transition: .2s linear;
+        }
+        .button-nav:hover{
+            background-color: rgba(255, 255, 255, .1);
+            color: whitesmoke;
+            box-shadow: 0 0 12px 4px rgba(0, 0, 0, .05);
+            transition: .2s linear;
+        }
+        .button-nav:active{
+            transition: 0s;
+            background-color: rgba(255, 255, 255, .4);
+        }
+    }
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#container-strawberry{
+    background-color: var(--bg-color-red);
+}
+#container-avocado{
+    background-color: var(--bg-color-green);
+}
+#container-orange{
+    background-color: var(--bg-color-orange);
+}
+h1{
+    font-size: 20rem;
+    color: white;
+}
+
+.img-soda{
+    position: absolute;
+    z-index: 1;
+    /* top: 0; */
+    left: 50%;
+    translate: -50%;
+    width: 50rem;
+}
+
+.img-fruit{
+    position: absolute;
+    z-index: 2;
+    /* top: 0; */
+    left: 50%;
+    translate: -50%;
+    width: 100rem;
+}
+
+.hidden{
+    display: none;
+}
+.active{
+
+}
