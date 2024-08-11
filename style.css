@@ -11,8 +11,22 @@
     --bg-color-orange: rgb(218, 165, 65);
 }
 
+@keyframes open {
+    0%{
+        filter: opacity(0%);
+        top: 10rem;
+    }
+}
+
 .active{
-    
+    animation-name: open;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+.items{
+    /* transition: all .3s; */
+    /* animation: open ; */
 }
 
 body{
