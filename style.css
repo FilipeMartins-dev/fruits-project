@@ -125,8 +125,8 @@ main{
 }
 
 .container{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 200vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -141,16 +141,22 @@ main{
 #container-orange{
     background-color: var(--bg-color-orange);
 }
+
 h1{
     font-size: 20rem;
     color: white;
     animation: open .7s;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    translate: -50%;
 }
 
 .img-soda{
     position: absolute;
     z-index: 1;
     /* top: 0; */
+    top: 10%;
     left: 50%;
     translate: -50%;
     width: 50rem;
@@ -160,7 +166,7 @@ h1{
 .img-fruit{
     position: absolute;
     z-index: 2;
-    /* top: 0; */
+    top: 10%;
     left: 50%;
     translate: -50%;
     width: 100rem;
