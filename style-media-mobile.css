@@ -20,3 +20,7 @@ h1{
         }
     }
 }
+
+.img-fruit{
+    overflow: hidden;
+}
