@@ -14,7 +14,7 @@
 @keyframes open {
     0%{
         filter: opacity(0%);
-        top: 10rem;
+        padding-top: 20rem;
     }
 }
 
@@ -25,8 +25,6 @@
 }
 
 .items{
-    /* transition: all .3s; */
-    /* animation: open ; */
 }
 
 body{
@@ -36,6 +34,26 @@ main{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    animation: bg-open .3s;
+}
+
+#container-nav-main{
+    position: absolute;
+    left: 50%;
+    translate: -50%;
+    margin-top: 1rem;
+}
+#nav-main{
+    color: whitesmoke;
+    font-variant: small-caps;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding-inline: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: rgba(0, 0, 0, .3); */
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
 }
 
 #container-nav{
@@ -50,7 +68,7 @@ main{
         width: 70%;
         display: flex;
         justify-content: space-between;
-
+ 
         .button-nav{
             width: 5rem;
             height: 5rem;
@@ -62,7 +80,7 @@ main{
             color: rgba(0, 0, 0, .3);
             font-weight: bolder;
             cursor: pointer;
-            transition: .2s linear;
+            transition: background-color, color .2s linear;
         }
         .button-nav:hover{
             background-color: rgba(255, 255, 255, .1);
@@ -97,6 +115,7 @@ main{
 h1{
     font-size: 20rem;
     color: white;
+    animation: open .7s;
 }
 
 .img-soda{
@@ -106,6 +125,7 @@ h1{
     left: 50%;
     translate: -50%;
     width: 50rem;
+    animation: open .5s;
 }
 
 .img-fruit{
@@ -115,6 +135,7 @@ h1{
     left: 50%;
     translate: -50%;
     width: 100rem;
+    animation: open .6s ease;
 }
 
 .hidden{

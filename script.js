@@ -11,11 +11,27 @@ const buttonNext = document.querySelector('#button-next')
 buttonPrevious.addEventListener('click', previousTheme)
 buttonNext.addEventListener('click', nextTheme)
 
+const body = document.querySelector('body')
+body.addEventListener('keydown', checkButton)
+
+function checkButton(event){
+    // console.log(event)
+
+    switch(event.key){
+        case 'ArrowLeft':
+            previousTheme()
+            break;
+        case 'ArrowRight':
+            nextTheme()
+            break;
+    }
+}
+
 const themes = [containerStrawberry, containerAvocado, containerOrange]
-const items = document.querySelectorAll('.items')
-const strawberryItems = document.querySelectorAll('#container-strawberry .items')
-const avocadoItems = document.querySelectorAll('#container-avocado .items')
-const orangeItems = document.querySelectorAll('#container-orange .items')
+// const items = document.querySelectorAll('.items')
+// const strawberryItems = document.querySelectorAll('#container-strawberry .items')
+// const avocadoItems = document.querySelectorAll('#container-avocado .items')
+// const orangeItems = document.querySelectorAll('#container-orange .items')
 
 let count = themes.length
 let active = 0
