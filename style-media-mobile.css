@@ -1,3 +1,7 @@
 h1{
     display: none;
 }
+
+.container{
+    padding-bottom: 10rem;
+}
