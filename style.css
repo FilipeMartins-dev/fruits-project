@@ -6,9 +6,9 @@
 
 :root{
     font-size: 10px;
-    --bg-color-red: tomato;
-    --bg-color-green: rgb(68, 175, 68);
-    --bg-color-orange: rgb(218, 165, 65);
+    --bg-color-red: radial-gradient(rgb(185, 61, 39), tomato);
+    --bg-color-green: radial-gradient(rgb(48, 140, 48),  rgb(86, 204, 86));
+    --bg-color-orange: radial-gradient(rgb(187, 136, 41), rgb(236, 180, 76));
 }
 
 @keyframes open {
@@ -131,16 +131,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #container-strawberry{
-    background-color: var(--bg-color-red);
+    background: var(--bg-color-red);
 }
 #container-avocado{
-    background-color: var(--bg-color-green);
+    background: var(--bg-color-green);
 }
 #container-orange{
-    background-color: var(--bg-color-orange);
+    background: var(--bg-color-orange);
 }
 
 h1{
@@ -178,4 +178,11 @@ h1{
     display: none;
 }
 .active{
+}
+
+main section{
+    background-color: black;
+    padding: 10rem;
+    display: flex;
+    
 }
