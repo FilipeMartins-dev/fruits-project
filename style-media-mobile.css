@@ -5,3 +5,18 @@ h1{
 .container{
     padding-bottom: 10rem;
 }
+
+#container-nav{
+    nav{
+        .button-nav{
+            width: 8rem;
+            height: 8rem;
+
+            font-size: 3rem;
+            /* line-height: none; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
