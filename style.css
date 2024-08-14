@@ -163,7 +163,7 @@ h1{
     position: absolute;
     z-index: 1;
     /* top: 0; */
-    top: 10%;
+    top: 0;
     left: 50%;
     translate: -50%;
     width: 50rem;
@@ -173,7 +173,7 @@ h1{
 .img-fruit{
     position: absolute;
     z-index: 2;
-    top: 10%;
+    top: 0;
     left: 50%;
     translate: -50%;
     width: 100rem;
