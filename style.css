@@ -82,7 +82,7 @@ main{
     justify-content: center;
 
     nav{
-        width: 70%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
  
@@ -171,6 +171,4 @@ h1{
 
 .hidden{
     display: none;
-}
-.active{
 }
