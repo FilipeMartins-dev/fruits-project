@@ -120,14 +120,6 @@ main{
     }
 }
 
-.container{
-    width: 100vw;
-    height: 200vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* overflow: hidden; */
-}
 #container-strawberry{
     background: var(--bg-color-red);
 }
@@ -138,33 +130,51 @@ main{
     background: var(--bg-color-orange);
 }
 
+.container{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
 h1{
     font-size: 20rem;
     color: whitesmoke;
     animation: open .7s;
-    position: absolute;
-    left: 50%;
+    position: fixed;
+    /* left: 50%;
     top: 35%;
-    translate: -50%;
+    translate: -50%; */
+
 }
 
 .img-soda{
-    position: absolute;
+    position: fixed;
+
+
+    /* position: absolute;
     z-index: 1;
+    top: 10%;
     /* top: 0; */
-    top: 0;
-    left: 50%;
-    translate: -50%;
+    /* left: 50%;
+    translate: -50%;  */
     width: 50rem;
     animation: open .5s;
 }
 
 .img-fruit{
-    position: absolute;
+    position: fixed;
+
+    /* position: absolute;
     z-index: 2;
     top: 0;
+    top: 10%;
     left: 50%;
-    translate: -50%;
+    translate: -50%; */
     width: 100rem;
     animation: open .6s ease;
 }
