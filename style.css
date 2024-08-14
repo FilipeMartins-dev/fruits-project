@@ -39,6 +39,7 @@ main{
     left: 50%;
     translate: -50%;
     margin-top: 3rem;
+    z-index: 10;
 }
 #nav-main{
     font-variant: small-caps;
@@ -49,28 +50,27 @@ main{
     width: 80vw;
     display: flex;
     justify-content: space-between;
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .8);
 
-    &:hover{
+    /* &:hover{
         span{
-            background-color: black;
         }
-    }
-
+    } */
+    
     span{
-        transition: color .3s;
+        transition: color .2s, border-bottom .3s;
+        border-bottom: 2px solid transparent;
     }
     span:hover{
+        color: white;
         cursor: pointer;
+        border-bottom: 2px solid whitesmoke;
     }
 
     div{
         display: flex;
         gap: 2rem;
     }
-
-    transition: all .3s;
-    transition: border .5s;
 }
 
 #container-nav{
