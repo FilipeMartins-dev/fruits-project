@@ -1,10 +1,10 @@
 # 🍓Fruits Page
 
 ### 🎯Techs
-- [x] HTML
-- [x] CSS
-- [x] JavaScript
-- [x] GIT
+- [x] **`HTML`**
+- [x] **`CSS`**
+- [x] **`JavaScript`**
+- [x] **`GIT`**
 
 <hr>
 
