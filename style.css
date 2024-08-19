@@ -30,8 +30,6 @@ body{
 main{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    animation: bg-open .3s;
 }
 
 #container-nav-main{
@@ -58,7 +56,7 @@ main{
     } */
     
     span{
-        transition: color .2s, border-bottom .3s;
+        transition: color .2s, border-bottom .5s;
         border-bottom: 2px solid transparent;
     }
     span:hover{
@@ -94,27 +92,28 @@ main{
             border-radius: 50%;
             line-height: 0;
             font-weight: bolder;
-            font-size: 2rem;
-            color: rgba(255, 255, 255, .4);
+            font-size: 2.5rem;
+            color: rgba(255, 255, 255, .5);
             cursor: pointer;
             
             
-            border: 2px solid rgba(255, 255, 255, .3);
+            border: 3px solid rgba(255, 255, 255, .5);
             background-color: transparent;
 
             /* box-shadow: 0 0 8px 2px rgba(0, 0, 0, .05); */
             transition: background-color .2s, color .2s, box-shadow .2s, border .2s;
         } 
         .button-nav:hover{
-            background-color: rgba(255, 255, 255, .4);
-            color: whitesmoke;
+            background-color: rgba(255, 255, 255, .5);
+            color: rgba(0, 0, 0, .3);
             /* box-shadow: 0 0 12px 4px rgba(0, 0, 0, .05); */
             /* transition: background-color color .5s; */
 
-            border: 2px solid transparent;
+            border: 3px solid transparent;
         }
         .button-nav:active{
             background-color: rgba(255, 255, 255, .1);
+            color: rgba(255, 255, 255, .4);
             transition: all 0s;
         }
     }
