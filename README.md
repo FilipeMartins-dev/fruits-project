@@ -1,14 +1,14 @@
 # 🍓Fruits Page
 
 ### 🎯Techs
-- [x] HTML
-- [x] CSS
-- [x] JavaScript
-- [x] GIT
+- [x] **`HTML`**
+- [x] **`CSS`**
+- [x] **`JavaScript`**
+- [x] **`GIT`**
 
 <hr>
 
-🌐About
+### 🌐About
 This is a personal project with objective improve my styling and programing skills on Front End Development.
 The page showcase three soda types, each featuring an open animation.
 
